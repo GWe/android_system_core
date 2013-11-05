@@ -249,7 +249,7 @@ static int check_perms(const char *name, unsigned int uid, unsigned int gid, cha
     return 0;
 }
 
-int __property_get(const char *name, char *value)
+int property_get(const char *name, char value[PROP_VALUE_MAX])
 {
     return __system_property_get(name, value);
 }
